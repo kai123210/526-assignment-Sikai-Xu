@@ -1,0 +1,7 @@
+Files:
+helloworld.py: reads from standard input line by line and prints the content as-is.
+myfile: Sample input file (content: Hello from David Mellor).
+Steps:
+Open a terminal in this directory.
+Execute:python3 helloworld.py < myfile
+The program will print the contents of myfile to the screen line by line.
