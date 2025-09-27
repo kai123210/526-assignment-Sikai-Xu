@@ -49,6 +49,7 @@ result:
 doIt(1) = 1
 doIt(3) = 2
 doIt(6) = 4
+
 Explain:
 1.doIt(1)：according to base case→ 1
 2.doIt(3) = doIt(2) + doIt(1) - doIt(0)= 2 + 1 - 1= 2
@@ -106,7 +107,6 @@ At this point, slow points to the midpoint 10. Extract:
 slow.prev = 8
 slow = 10
 slow.next = 15
-Final calculation result:
-8 + 10 + 15 = 33
+Final calculation result: 8 + 10 + 15 = 33
 
 
