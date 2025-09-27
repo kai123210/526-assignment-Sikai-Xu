@@ -1,0 +1,25 @@
+1.Program Objective：
+The goal of this program is to compute the sum of all nodes in a linked list using a recursive function.
+
+2.Node Class Design
+The Listnode class is used to represent a node in the linked list. Each node has two parts:
+val: stores the value of the current node;
+next: a reference to the next node. If there is no next node, it is set to None.
+
+3.Linked List Construction
+Four nodes with values 1, 2, 3, and 4 are created. They are connected in sequence using the next pointer, forming a singly linked list:
+head(1) → 2 → 3 → 4 → None
+
+4.Recursive Function getSum
+Base case : If the current node is None, it means the end of the list has been reached, so the function returns 0.
+Recursive case: If the node exists, return the current node’s value head.val plus the recursive call on the remaining list head.next.
+Thus, the recursive relation is:
+getSum(head) = head.val + getSum(head.next)
+
+5.Execution Flow
+First call: getSum(1) → 1 + getSum(2)
+Second call: getSum(2) → 2 + getSum(3)
+Third call: getSum(3) → 3 + getSum(4)
+Fourth call: getSum(4) → 4 + getSum(None)
+Termination: getSum(None) → 0
+Final result: 1 + 2 + 3 + 4 = 10.
